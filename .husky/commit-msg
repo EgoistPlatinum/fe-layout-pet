@@ -1,0 +1,16 @@
+branch_name=$(git branch --show-current)
+
+if [ -z "$branch_name" ]; then
+  echo "Commit rejected: unable to determine the current branch."
+  exit 1
+fi
+
+case "$branch_name" in
+  feature/* | bug/* | fix/*)
+    exit 0
+    ;;
+  *)
+    echo "Commit rejected: branch '$branch_name' must start with feature/, bug/, or fix/."
+    exit 1
+    ;;
+esac
