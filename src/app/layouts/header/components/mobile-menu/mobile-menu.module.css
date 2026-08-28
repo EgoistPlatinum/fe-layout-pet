@@ -1,0 +1,17 @@
+@reference '../../../../global.css';
+
+.hidden {
+  @apply md:hidden;
+}
+
+.navItem {
+  @apply mt-15 flex flex-col items-center justify-center gap-5;
+}
+
+.divider {
+  @apply mx-7.5 w-auto bg-gray-400;
+}
+
+.footer {
+  @apply items-stretch gap-5;
+}

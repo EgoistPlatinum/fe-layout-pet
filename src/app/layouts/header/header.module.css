@@ -1,0 +1,9 @@
+@reference '../../global.css';
+
+.header {
+  @apply flex justify-between p-8;
+}
+
+.divider {
+  @apply mx-7.5 w-auto bg-gray-300;
+}
