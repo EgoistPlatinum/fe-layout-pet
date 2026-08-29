@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <div className="h-screen">111</div>,
+        element: <div>111</div>,
       },
       {
         path: '/mobile-menu',

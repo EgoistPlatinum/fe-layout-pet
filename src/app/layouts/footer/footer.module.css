@@ -1,0 +1,9 @@
+@reference '../../global.css';
+
+.footer {
+  @apply bg-[#EFEFEF] p-7.5;
+}
+
+.wrapper {
+  @apply flex justify-between  items-center pt-6.25;
+}
