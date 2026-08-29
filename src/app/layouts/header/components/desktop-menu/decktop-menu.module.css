@@ -1,0 +1,15 @@
+@reference '../../../../global.css';
+
+.wrapper {
+  @apply hidden w-full justify-between pl-[74px];
+  @apply md:flex;
+}
+
+.navItem {
+  @apply flex items-center  gap-[38px];
+  @apply lg:pl-[25px] lg:gap-[54px];
+}
+
+.menuAct {
+  @apply flex flex-row items-center gap-1;
+}

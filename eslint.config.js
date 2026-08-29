@@ -6,8 +6,6 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-import { boundariesConfig } from './eslint/boundaries.config.js'
-
 export default defineConfig([
   globalIgnores([
     'dist/**',
@@ -102,8 +100,6 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
-
-  ...boundariesConfig,
 
   {
     files: ['*.config.ts'],

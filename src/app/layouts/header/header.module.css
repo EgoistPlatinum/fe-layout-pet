@@ -1,0 +1,13 @@
+@reference '../../global.css';
+
+.header {
+  @apply sticky top-0 bg-white z-50;
+}
+
+.wrapper {
+  @apply flex justify-between p-8;
+}
+
+.divider {
+  @apply mx-7.5 w-auto bg-gray-300;
+}
