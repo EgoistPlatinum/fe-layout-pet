@@ -6,7 +6,9 @@ export const NavigateActions = () => {
   return (
     <>
       {navigationItems.map(({ label, path }) => (
-        <NavLink to={path}>{label}</NavLink>
+        <NavLink className="md:text-base xl:text-lg" to={path}>
+          {label}
+        </NavLink>
       ))}
     </>
   )

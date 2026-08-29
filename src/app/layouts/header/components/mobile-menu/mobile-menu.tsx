@@ -19,7 +19,7 @@ export const MobileMenu = () => {
   return (
     <div className={styles.hidden}>
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger asChild>
           <Button size="icon" aria-label="MobileMenu" variant="ghost">
             <MenuIcon className="size-7" />
           </Button>
