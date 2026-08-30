@@ -7,3 +7,7 @@
 .wrapper {
   @apply flex justify-between  items-center pt-6.25;
 }
+
+.navItems {
+  @apply flex flex-col gap-5 mt-13.5 mb-8;
+}

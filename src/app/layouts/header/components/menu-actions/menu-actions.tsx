@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
+import { routes } from '@/config'
 import { cn } from '@/lib'
 
 interface MenuActionsProps {
@@ -15,7 +16,7 @@ export const MenuActions = ({ isNotFullWidth }: MenuActionsProps) => {
         variant="ghost"
         className={isNotFullWidth ? '' : 'w-full'}
       >
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to={routes.login}>Login</NavLink>
       </Button>
       <Button
         asChild
@@ -26,7 +27,7 @@ export const MenuActions = ({ isNotFullWidth }: MenuActionsProps) => {
         )}
         variant="default"
       >
-        <NavLink to="/signup">Sign Up</NavLink>
+        <NavLink to={routes.signup}>Sign Up</NavLink>
       </Button>
     </>
   )

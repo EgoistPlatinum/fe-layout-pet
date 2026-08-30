@@ -1,12 +1,14 @@
-import { NavLink } from 'react-router-dom'
-
-import { socialItems } from '@/app/layouts/footer/social-items'
 import { Button } from '@/components/ui/button'
+import { type SocialItem } from '@/config'
 
-export const SocialNetwork = () => {
+interface SocialNetworkProps {
+  items: readonly SocialItem[]
+}
+
+export const SocialNetwork = ({ items }: SocialNetworkProps) => {
   return (
-    <div>
-      {socialItems.map(({ name, link, icon }) => (
+    <div className="flex items-center gap-2">
+      {items.map(({ name, link, icon }) => (
         <Button
           asChild
           key={name}
@@ -14,9 +16,9 @@ export const SocialNetwork = () => {
           size="icon"
           aria-label={name}
         >
-          <NavLink to={link}>
-            <img src={icon} alt="" aria-hidden="true" />
-          </NavLink>
+          <a href={link} target="_blank" rel="noreferrer">
+            <img className="size-5" src={icon} alt="" aria-hidden="true" />
+          </a>
         </Button>
       ))}
     </div>

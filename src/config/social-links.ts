@@ -3,7 +3,13 @@ import indeedIcon from '@/assets/icon/indeed.svg'
 import instagramIcon from '@/assets/icon/instagram.svg'
 import twitterIcon from '@/assets/icon/twit.svg'
 
-export const socialItems = [
+export interface SocialItem {
+  icon: string
+  link: string
+  name: string
+}
+
+export const socialItems: SocialItem[] = [
   {
     name: 'Instagram',
     link: 'https://www.instagram.com',
