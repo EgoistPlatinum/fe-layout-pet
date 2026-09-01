@@ -1,0 +1,13 @@
+@reference "~/app/global.css";
+
+.description {
+  @apply flex flex-col items-center;
+}
+
+.descriptionText {
+  @apply mt-4 text-center;
+}
+
+.navLink {
+  @apply text-brand-primary;
+}
