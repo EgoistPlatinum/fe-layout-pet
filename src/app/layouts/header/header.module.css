@@ -1,4 +1,4 @@
-@reference '../../global.css';
+@reference '~/app/global.css';
 
 .header {
   @apply sticky top-0 bg-white z-50;

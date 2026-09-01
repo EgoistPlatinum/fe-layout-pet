@@ -1,6 +1,6 @@
 import { MenuIcon } from 'lucide-react'
 
-import { NavigateActions } from '@/app/layouts/header/components/navigate-actions'
+import { NavigateActions } from '@/components/common/navigate-actions'
 import { Button } from '@/components/ui/button'
 import { Divider } from '@/components/ui/divider'
 import {
@@ -10,6 +10,7 @@ import {
   SheetHeader,
   SheetTrigger,
 } from '@/components/ui/sheet'
+import { headerNavigationItems } from '@/config'
 
 import { MenuActions } from '../menu-actions'
 
@@ -27,9 +28,9 @@ export const MobileMenu = () => {
         <SheetContent side="top">
           <SheetHeader />
           <div className={styles.navItem}>
-            <NavigateActions />
+            <NavigateActions navigationItems={headerNavigationItems} />
           </div>
-          <Divider color="black" className={styles.divider} />
+          <Divider className={styles.divider} />
           <SheetFooter className="items-stretch gap-5">
             <MenuActions />
           </SheetFooter>
