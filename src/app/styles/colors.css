@@ -1,0 +1,18 @@
+@theme {
+  /* Brand */
+  --color-brand-primary: #6c5fbc;
+  --color-brand-soft: #dbd9ee;
+
+  /* Text */
+  --color-content-primary: #201f1f;
+  --color-content-secondary: #676767;
+  --color-content-inverse: #ffffff;
+
+  /* Surfaces */
+  --color-surface-primary: #ffffff;
+  --color-surface-muted: #f9f9f9;
+  --color-surface-footer: #efefef;
+
+  /* Borders and dividers */
+  --color-divider-muted: #cbcbcb;
+}

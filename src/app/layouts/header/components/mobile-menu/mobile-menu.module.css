@@ -9,7 +9,7 @@
 }
 
 .divider {
-  @apply mx-7.5 w-auto bg-gray-400;
+  @apply mx-7.5 w-auto bg-divider-muted;
 }
 
 .footer {
