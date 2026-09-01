@@ -1,13 +1,14 @@
 import { Button } from '@/components/ui/button'
 import { type SocialItem } from '@/config'
-
+import { cn } from '@/lib'
 interface SocialNetworkProps {
   items: readonly SocialItem[]
+  className?: string
 }
 
-export const SocialNetwork = ({ items }: SocialNetworkProps) => {
+export const SocialNetwork = ({ items, className }: SocialNetworkProps) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className={cn('flex items-center gap-2', className)}>
       {items.map(({ name, link, icon }) => (
         <Button
           asChild
