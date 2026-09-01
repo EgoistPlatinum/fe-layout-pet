@@ -1,7 +1,7 @@
 @reference '~/app/global.css';
 
 .footer {
-  @apply bg-[#EFEFEF] p-7.5;
+  @apply bg-surface-footer p-7.5;
 }
 
 .wrapper {
@@ -22,7 +22,7 @@
 }
 
 .divider {
-  @apply order-4 col-span-2 bg-[#CBCBCB] mt-7 md:order-3;
+  @apply order-4 col-span-2 mt-7 bg-divider-muted md:order-3;
 }
 
 .copyright {

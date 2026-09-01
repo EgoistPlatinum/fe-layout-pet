@@ -1,17 +1,18 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import { MarketingLayout } from '@/app/layouts/marketing-layout'
+import { AppLayout } from '@/app/layouts/app-layout'
 import { ErrorPage } from '@/pages/error-page'
+import { MainPage } from '@/pages/main-page'
 import { NotFoundPage } from '@/pages/not-found-page'
 
 export const router = createBrowserRouter([
   {
-    element: <MarketingLayout />,
+    element: <AppLayout />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <div>111</div>,
+        element: <MainPage />,
       },
       {
         path: '/mobile-menu',
