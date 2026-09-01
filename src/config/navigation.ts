@@ -12,6 +12,8 @@ export const routes = {
   menu: '/menu',
   pricing: '/pricing',
   signup: '/signup',
+  getStarted: '/get-started',
+  goPro: '/go-pro',
 } as const
 
 export const headerNavigationItems: NavigationItem[] = [
